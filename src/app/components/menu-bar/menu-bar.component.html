@@ -1,18 +1,18 @@
 <div class="menu-bar__container">
 
     <div class="menu-bar__logo">
-        <img src="assets/ps-logo.png" 
+        <img [src]=[logoCover] 
         alt="" 
         srcset=""
         width="140px"
         height="32px">
     </div>
-    <div class="menu-bar__item">
-        <ul>
-            <li><a href="">YOUTUBE</a></li>
-            <li><a href="">LINKEDIN</a></li>
-            <li><a href="">GITHUB</a></li>
-        </ul>
 
-    </div>
+    <app-menu-links
+     youtubeLink="{{youtubeLink}}"
+     linkedinLink="{{linkedinLink}}"
+     gitHubLink="{{gitHubLink}}"
+    >
+    </app-menu-links>
+    
 </div>>
